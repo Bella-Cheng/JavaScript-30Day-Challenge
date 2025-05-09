@@ -62,3 +62,38 @@
 //   }
   
 //   console.log(findMax([3, 7, 2, 9, 5]))
+
+// 今日練習題 #4：找出母音字母
+// 題目：
+// 寫一個函式 countVowels(str)，可以計算並回傳一個字串中有幾個母音字母（a, e, i, o, u）。
+
+
+// const countVowels = function(str){
+//   const newArr = []
+//   const splitStr = str.split("")
+
+//   const voStr = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+
+//   for( i = 0 ; i < splitStr.length ; i++){
+//     if(voStr.includes(splitStr[i])){
+//       newArr.push(splitStr[i])
+//     }
+
+//   }return newArr.length
+// }
+
+// console.log(countVowels("Bella"))
+
+
+// const countVowels = function(str){
+
+//   const splitStr = str.split("")
+//   const voStr = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+
+//   const newArr = splitStr.filter(item => voStr.includes(item))
+
+//   return newArr.length
+
+// }
+
+// console.log(countVowels("Bella"))
