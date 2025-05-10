@@ -97,3 +97,15 @@
 // }
 
 // console.log(countVowels("Bella"))
+
+// 今日練習題 #5：找出陣列中的偶數
+// 請寫一個函式 filterEvenNumbers(arr)，
+// 接收一個「數字陣列」，回傳只包含偶數的新陣列。
+
+// const filterEvenNumbers = function(arr){
+//   // for(let i = 0 ; i < arr.length ; i++)
+//   const EvenNum = arr.filter(num => ( num % 2 == 0 ))
+//   return EvenNum
+// }
+
+// console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]))
