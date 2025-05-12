@@ -109,3 +109,14 @@
 // }
 
 // console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]))
+
+// 今日練習題 #6：將每個字串轉成大寫
+// 請寫一個函式 toUpperCaseArray(arr)，
+// 它會接收一個「字串陣列」，回傳一個新的陣列，裡面是轉成大寫的字串。
+
+// const toUpperCaseArray = function(arr){
+//   const newArr = arr.map((str) => str.toUpperCase())
+//   return newArr
+// }
+
+// console.log(toUpperCaseArray(["hello", "world", "bella"]))
