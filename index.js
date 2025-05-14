@@ -120,3 +120,15 @@
 // }
 
 // console.log(toUpperCaseArray(["hello", "world", "bella"]))
+
+// 今日練習題 #7：格式化名字陣列
+// 請寫一個函式 formatNames(arr)，接受一個字串陣列，將每個名字格式化為「首字大寫，其餘小寫」，然後回傳格式化後的陣列。
+
+const  formatNames = function(arr){
+  let newArr = arr.map((str) => {
+    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+  })
+  return newArr
+}
+
+console.log(formatNames(["bELLA", "CANDY", "lIsa"]))
