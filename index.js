@@ -124,11 +124,37 @@
 // 今日練習題 #7：格式化名字陣列
 // 請寫一個函式 formatNames(arr)，接受一個字串陣列，將每個名字格式化為「首字大寫，其餘小寫」，然後回傳格式化後的陣列。
 
-const  formatNames = function(arr){
-  let newArr = arr.map((str) => {
-    return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
-  })
-  return newArr
-}
+// const  formatNames = function(arr){
+//   let newArr = arr.map((str) => {
+//     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+//   })
+//   return newArr
+// }
 
-console.log(formatNames(["bELLA", "CANDY", "lIsa"]))
+// console.log(formatNames(["bELLA", "CANDY", "lIsa"]))
+
+// 今日練習題 #8：平方和與總數
+// 請寫一個函式 sumOfSquares(arr)，它會接收一個數字陣列，並回傳所有數字的平方和。
+
+// const sumOfSquares = function(arr){
+//   const squareArr = arr.map((num) => {
+//     return num ** 2
+//   }).reduce((sum,num) => {
+//     return num + sum 
+//   },0)
+
+//   return squareArr
+// }
+
+// console.log(sumOfSquares([1, 2, 3]))
+
+//使用for迴圈基礎練習
+// const sumOfSquares = function(arr){
+//   let result = 0
+//   for(let i = 0 ; i < arr.length ; i++){
+//     const squareNum = arr[i] ** 2
+//     result =  squareNum + result
+//   }return result
+// }
+
+// console.log(sumOfSquares([1, 2, 3]))
