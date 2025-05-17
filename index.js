@@ -158,3 +158,40 @@
 // }
 
 // console.log(sumOfSquares([1, 2, 3]))
+
+// 今日練習題 #9：回傳最短字串的長度
+// 請寫一個函式 shortestWordLength(arr)，接收一個字串陣列，回傳最短字串的長度。
+
+// const shortestWordLength = function(arr){
+//   const newArr = arr.map((str) => str.length)
+//   const minStr = Math.min(...newArr)
+//   return minStr
+// }
+
+// console.log(shortestWordLength(["apple", "banana", "kiwi"]))
+
+// 加強題 #9-1：回傳最短的字串
+// 找出陣列中「最短的字串」本身，而不是長度。
+
+// const shortestWordLength = function(arr){
+  
+//   let minStr = arr[0]
+//   for( let i = 0 ; i < arr.length ; i++){
+//     if(arr[i].length < minStr.length){
+//       minStr = arr[i]
+//     }
+//   }return minStr
+// }
+
+// console.log(shortestWordLength(["apple", "banana", "kiwi"]))
+
+//使用filter
+// const shortestWordLength = function(arr){
+//   const newArr = arr.map((str) => str.length)
+//   const minStr = Math.min(...newArr)
+//   const result = arr.filter((str) => str.length == minStr)
+
+//   return result
+// }
+
+// console.log(shortestWordLength(["apple", "banana", "kiwi"]))
