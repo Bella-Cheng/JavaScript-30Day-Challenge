@@ -195,3 +195,22 @@
 // }
 
 // console.log(shortestWordLength(["apple", "banana", "kiwi"]))
+
+const shortestWordLength = function(arr){
+  
+  const result = arr.reduce((shortStr, currentStr) => {
+    console.log(`我是currentStr: ${currentStr}`)
+    console.log(`我是shortStr: ${shortStr}`)
+
+    if( currentStr.length < shortStr.length ){
+      console.log(`我是currentStr: ${currentStr}`)
+      return currentStr
+    }else{
+      console.log(`我是shortStr: ${shortStr}`)
+      return shortStr
+    }
+  },arr[0])  
+  return result
+}
+
+console.log(shortestWordLength(["apple", "banana", "kiwi"]))
