@@ -243,3 +243,31 @@
 // }
 
 // console.log(capitalizeWords(["hello", "world", "bella"]));
+
+// 今日練習題 #11：字串有幾個單字
+// 請寫一個函式 countWords(str)，接收一段字串 str，回傳字串中有幾個單字。
+
+// const countWords = function(str) {
+//   return str.split(" ")
+//     .filter((word) => word.trim() !== "")
+//     .length;
+// }
+
+// 今日練習題 #12：去除重複項目的新陣列
+// 請寫一個函式 removeDuplicates(arr)，接收一個陣列，回傳一個去除重複項目的新陣列，保留原本的順序。
+
+// const removeDuplicates = function(arr){
+//   const setArr = new Set(arr)
+//   return [...setArr]
+// }
+
+// console.log(removeDuplicates([1, 2, 2, 3, 1, 4]))
+
+// const removeDuplicates = function(arr){
+//   const result = arr.filter((num, index, newArr) => {
+//     return newArr.indexOf(num) == index
+//   })
+//   console.log(result)
+// }
+
+// console.log(removeDuplicates([1, 2, 2, 3, 1, 4]))
