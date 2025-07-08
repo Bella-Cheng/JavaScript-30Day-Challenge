@@ -196,21 +196,50 @@
 
 // console.log(shortestWordLength(["apple", "banana", "kiwi"]))
 
-const shortestWordLength = function(arr){
+// const shortestWordLength = function(arr){
   
-  const result = arr.reduce((shortStr, currentStr) => {
-    console.log(`我是currentStr: ${currentStr}`)
-    console.log(`我是shortStr: ${shortStr}`)
+//   const result = arr.reduce((shortStr, currentStr) => {
+//     console.log(`我是currentStr: ${currentStr}`)
+//     console.log(`我是shortStr: ${shortStr}`)
 
-    if( currentStr.length < shortStr.length ){
-      console.log(`我是currentStr: ${currentStr}`)
-      return currentStr
-    }else{
-      console.log(`我是shortStr: ${shortStr}`)
-      return shortStr
-    }
-  },arr[0])  
-  return result
-}
+//     if( currentStr.length < shortStr.length ){
+//       console.log(`我是currentStr: ${currentStr}`)
+//       return currentStr
+//     }else{
+//       console.log(`我是shortStr: ${shortStr}`)
+//       return shortStr
+//     }
+//   },arr[0])  
+//   return result
+// }
 
-console.log(shortestWordLength(["apple", "banana", "kiwi"]))
+// console.log(shortestWordLength(["apple", "banana", "kiwi"]))
+
+// const shortestWordLength = function(arr){
+  
+//   const result = arr.reduce((shortStr, currentStr) => {
+//     console.log(`我是currentStr: ${currentStr}`)
+//     console.log(`我是shortStr: ${shortStr}`)
+
+//     if( currentStr.length < shortStr.length ){
+//       console.log(`我是currentStr: ${currentStr}`)
+//       return currentStr
+//     }else{
+//       console.log(`我是shortStr: ${shortStr}`)
+//       return shortStr
+//     }
+//   },arr[0])  
+//   return result
+// }
+
+// console.log(shortestWordLength(["apple", "banana", "kiwi"]))
+
+// 今日練習題 #10：每個單字的每個字母都轉為大寫
+// 請寫一個函式 capitalizeWords(arr)，接受一個字串陣列 arr，並回傳一個新的陣列，其中每個單字的每個字母都轉為大寫。
+
+// const capitalizeWords = function(arr){
+//   const strToupper = arr.map((str) => str.toUpperCase())
+//   return strToupper
+// }
+
+// console.log(capitalizeWords(["hello", "world", "bella"]));
