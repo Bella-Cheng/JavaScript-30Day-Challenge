@@ -271,3 +271,68 @@
 // }
 
 // console.log(removeDuplicates([1, 2, 2, 3, 1, 4]))
+
+// 今日練習題 #13：找出最常出現的字母
+// 請寫一個函式 mostFrequentChar(str)，找出字串中出現次數最多的字母。
+
+
+//方法一 ： 用兩個迴圈解答
+// const mostFrequentChar = function(str){
+
+//   const obj = {}
+//   const word = str.replace(/\s/g, "").split("")
+
+//   for( let i = 0 ; i < word.length ; i++ ){
+    
+//     let char = word[i]
+
+//     if( char in obj ){
+//       obj[char]++
+//     }else{
+//       obj[char] = 1
+//     }
+    
+//   }
+
+//   let maxCount = 0
+//   let maxChar = ""
+//   for( count in obj){
+//     if( obj[count] > maxCount ){
+//       maxCount = obj[count];
+//       maxChar = count;
+//     }
+//   }
+
+//   return maxChar;
+// }
+
+// console.log(mostFrequentChar("bella is brilliant"))
+
+//方法二：用一個迴圈 同步進行比較
+// const mostFrequentChar = function(str) {
+//   const obj = {};
+//   let maxChar = "", maxCount = 0;
+
+//   for (const char of str.replace(/\s/g, '')) {
+//     obj[char] = (obj[char] || 0) + 1;
+
+//     if (obj[char] > maxCount) {
+//       maxCount = obj[char];
+//       maxChar = char;
+//     }
+//   }
+
+//   return maxChar;
+// };
+
+// console.log(mostFrequentChar("bella is brilliant"))
+
+//方法三：使用 forEach reduce entries 方法
+// const mostFrequentChar = function(str) {
+//   const counts = {};
+//   str.replace(/\s/g, '').split('').forEach(c => counts[c] = (counts[c] || 0) + 1);
+
+//   return Object.entries(counts).reduce((a, b) => a[1] >= b[1] ? a : b)[0];
+// };
+
+// console.log(mostFrequentChar("bella is brilliant"))
