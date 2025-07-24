@@ -354,6 +354,8 @@
 
 //面試練習題：請寫一個函式，接收一個物件陣列，篩選出年齡大於 18 歲的成員。
 
-const ageBiggerThan18 = function(obj){
-  
-}
+// const overThan18 = function(arr) {
+//   return arr.filter(obj => obj.age > 18);
+// }
+
+// console.log(overThan18(users));
