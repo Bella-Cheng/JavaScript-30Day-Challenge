@@ -336,3 +336,24 @@
 // };
 
 // console.log(mostFrequentChar("bella is brilliant"))
+
+// 面試練習題：請寫一個函式，接收一個字串，回傳這個字串反過來的結果。
+// const reverStr = function(str){
+//   return str.split("").reverse().join("")
+// }
+
+// console.log(reverStr('I am Bella'))
+
+// 面試練習題：請寫一個函式，接收一個陣列，回傳所有大於 10 的數字組成的新陣列。
+// const biggerThanTen = function(arr){
+//   const result = arr.filter((num) => num > 10 )
+//   return result
+// }
+
+// console.log(biggerThanTen([1,9,10,15,5,13,1]))
+
+//面試練習題：請寫一個函式，接收一個物件陣列，篩選出年齡大於 18 歲的成員。
+
+const ageBiggerThan18 = function(obj){
+  
+}
