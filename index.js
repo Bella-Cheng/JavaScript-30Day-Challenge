@@ -375,15 +375,28 @@
 // console.log(mergeUnique([1, 2, 3], [2, 3, 4, 5]))
 
 //用 for 迴圈 + includes
-const mergeUnique = function(arr1, arr2){
-  const newArr = arr1.concat(arr2)
+// const mergeUnique = function(arr1, arr2){
+//   const newArr = arr1.concat(arr2)
   
-  let result = []
-  for( let i = 0 ; i < newArr.length ; i++){
-    if(!result.includes(newArr[i])){
-      result.push(newArr[i])
-    }
-  }return result
-}
+//   let result = []
+//   for( let i = 0 ; i < newArr.length ; i++){
+//     if(!result.includes(newArr[i])){
+//       result.push(newArr[i])
+//     }
+//   }return result
+// }
 
-console.log(mergeUnique([1, 2, 3], [2, 3, 4, 5]))
+// console.log(mergeUnique([1, 2, 3], [2, 3, 4, 5]))
+
+//用 filter
+const mergeUnique = function(arr1, arr2) {
+  const newArr = arr1.concat(arr2);
+  
+  const result = newArr.filter((item, index) => {
+    return newArr.indexOf(item) === index;
+  });
+
+  return result;
+};
+
+console.log(mergeUnique([1, 2, 3], [2, 3, 4, 5]));
