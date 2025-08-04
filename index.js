@@ -359,3 +359,28 @@
 // }
 
 // console.log(overThan18(users));
+
+// 今日練習題 #14：合併兩個陣列，並移除重複值
+// 請寫一個函式 mergeUnique(arr1, arr2)，它會接收兩個陣列，合併後回傳一個沒有重複項目的新陣列。
+
+// 用 Set
+// const mergeUnique = function(arr1, arr2){
+//   const newArr = arr1.concat(arr2)
+//   const result = new Set([newArr])
+
+//   return Array.from(result)
+
+// }
+
+// console.log(mergeUnique([1, 2, 3], [2, 3, 4, 5]))
+
+
+const mergeUnique = function(arr1, arr2){
+  const newArr = arr1.concat(arr2)
+  const result = new Set([newArr])
+
+  return Array.from(result)
+
+}
+
+console.log(mergeUnique([1, 2, 3], [2, 3, 4, 5]))
